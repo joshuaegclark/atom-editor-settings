@@ -31,3 +31,7 @@ node_modules
 compile-cache
 storage
 .apm
+
+# these existed on my Ubuntu vm
+.node-gyp
+nohup.out
