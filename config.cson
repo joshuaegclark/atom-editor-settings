@@ -1,0 +1,51 @@
+"*":
+  core:
+    disabledPackages: [
+      "firepad"
+      "jshint"
+      "atomatigit"
+      "debugger"
+      "git-grep"
+      "git-log"
+      "git-plus"
+      "nrepl"
+      "language-jsx"
+      "react"
+    ]
+    themes: [
+      "atom-dark-ui"
+      "seti-syntax"
+    ]
+    audioBeep: false
+  jshint:
+    supportLintingJsx: true
+  "exception-reporting":
+    userId: "eee8e486-0362-b5da-5e8b-925fe95bd14a"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "f13df02236a0f1f8485bec3223975f32e2d2be2b"
+  editor:
+    invisibles: {}
+    fontSize: 15
+  react: {}
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+  autosave:
+    enabled: true
+  "autocomplete-plus":
+    confirmCompletion: "tab and enter"
+    includeCompletionsFromAllBuffers: true
+  "terminal-status": {}
+  "terminal-panel": {}
+  "auto-update-packages": {}
+  linter:
+    showErrorPanel: false
+  "linter-eslint": {}
+  nuclide:
+    remoteProjectsConfig: []
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  "sync-settings":
+    personalAccessToken: "cfd0ec51b7cd5d5313fe4f91476a3d56c3b29779"
+    gistId: "56bad3b861f68b4f6025"

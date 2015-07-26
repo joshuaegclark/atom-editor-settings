@@ -1,0 +1,56 @@
+# Your keymap
+#
+# Atom keymaps work similarly to stylesheets. Just as stylesheets use selectors
+# to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# '.editor':
+#   'enter': 'editor:newline'
+#
+# '.workspace':
+#   'ctrl-shift-p': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+# You can find more information about keymaps in these guides:
+# * https://atom.io/docs/latest/customizing-atom#customizing-key-bindings
+# * https://atom.io/docs/latest/advanced/keymaps
+
+'atom-workspace, .workspace, .workspace .editor':
+  'ctrl-s': 'find-and-replace:show'
+  'ctrl-y': 'core:paste'
+  'ctrl-/': 'core:undo'
+  'ctrl-x ctrl-s': 'core:save'
+  'ctrl-shift right': 'window:focus-pane-on-right'
+  'ctrl-shift left': 'window:focus-pane-on-left'
+  'ctrl-shift up': 'window:focus-pane-above'
+  'ctrl-shift down': 'window:focus-pane-below'
+  'ctrl-c f':'fuzzy-finder:toggle-file-finder'
+  'ctrl-x alt-b': 'sync-settings:backup'
+  'ctrl-x alt-r': 'sync-settings:restore'
+  'ctrl-x b':'fuzzy-finder:toggle-buffer-finder'
+  'ctrl-x 0': 'pane:close'
+  'ctrl-x 2': 'pane:split-down'
+  'ctrl-x 3': 'pane:split-right'
+
+  'ctrl-x ctrl-g': 'git-grep:grep'
+  'ctrl-shift-left': 'layout-manager:shrink-active-pane'
+  'ctrl-shift-right': 'layout-manager:enlarge-active-pane'
+  'alt-shift-right': 'layout-manager:move-pane-right'
+  'alt-shift-left': 'layout-manager:move-pane-left'
+  'alt-shift-up': 'layout-manager:move-pane-up'
+  'alt-shift-down': 'layout-manger:move-pane-down'
+  'ctrl-x g': 'atomatigit:show'
+
+
+'.autocomplete-plus input.hidden-input':
+  'enter': 'autocomplete-plus:confirm'
+
+'.platform-darwin, .platform-darwin .command-palette .editor':
+  'alt-x': 'command-palette:toggle'
+  'alt-.': 'symbols-view:go-to-declaration'
+  'alt-,': 'symbols-view:return-from-declaration'
