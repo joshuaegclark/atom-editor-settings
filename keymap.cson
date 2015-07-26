@@ -20,7 +20,7 @@
 # * https://atom.io/docs/latest/customizing-atom#customizing-key-bindings
 # * https://atom.io/docs/latest/advanced/keymaps
 
-'atom-workspace, .workspace, .workspace .editor':
+'atom-workspace, atom-text-editor':
   'ctrl-s': 'find-and-replace:show'
   'ctrl-y': 'core:paste'
   'ctrl-/': 'core:undo'
