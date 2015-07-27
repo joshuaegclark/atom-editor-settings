@@ -4,6 +4,9 @@ atom-config
 
 `cd && git clone https://github.com/joshuaegclark/atom-editor-settings .atom`
 
+You'll then need to update your packages as they are likely out of date in this repository.
+`cmd-,` will open settings, then go to the Updates section.
+
 ## What's Inside
 * Added keybindings to match emacs-style keybindings.
   * See `keymap.cson` for complete list of bindings, but it is by no means complete, so feel free to submit a Pull Request to add more!
@@ -11,8 +14,6 @@ atom-config
   * Autocomplete Paths
   * color-picker (`cmd-shift c`)
   * linter & linter-eslint
-  * sync-settings (`M-x shift-B` for backup `M-x shift-R` for restore)
-    * Backs up pertinent settings to a Github Gist [atom-sync-settings](https://github.com/Hackafe/atom-sync-settings)
   * Seti UI & Syntax Themes
 
 ## TODO
