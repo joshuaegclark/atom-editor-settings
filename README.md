@@ -15,6 +15,7 @@ You'll then need to update your packages as they are likely out of date in this 
   * color-picker (`cmd-shift c`)
   * linter & linter-eslint
   * Seti UI & Syntax Themes
+  * Git Control
 
 ## TODO
 * Additional/better Git tools
