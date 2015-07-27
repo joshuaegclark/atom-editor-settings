@@ -42,10 +42,5 @@
   linter:
     showErrorPanel: false
   "linter-eslint": {}
-  nuclide:
-    remoteProjectsConfig: []
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
-  "sync-settings":
-    personalAccessToken: "cfd0ec51b7cd5d5313fe4f91476a3d56c3b29779"
-    gistId: "56bad3b861f68b4f6025"
