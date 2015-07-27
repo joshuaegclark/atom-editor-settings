@@ -12,6 +12,27 @@
 
 }
 
-atom-text-editor {
+atom-text-editor::shadow {
+  .line-numbers{
+    padding-left: 4px !important;
+  }
 
+  .git-line-modified, .git-line-added{
+    margin-left: -4px;
+    padding-left: 2px !important;
+    opacity: .5
+  }
+
+  .git-line-added{
+    border-left: 2px solid limegreen !important;
+  }
+
+  .git-line-modified{
+    border-left: 2px solid #ff8300 !important;
+  }
+
+  .git-line-removed{
+    margin-left: -4px;
+    padding-left: 4px !important;
+  }
 }

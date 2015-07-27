@@ -23,4 +23,3 @@ You'll then need to update your packages as they are likely out of date in this 
 * Figure out a better way of syncing Packages
   * currently just committing the entire packages directory...prone to being out of date and bloats repo
 * Javascript REPL w/ Babel
-* Update pane splitting keybindings to use built in Pane functions
