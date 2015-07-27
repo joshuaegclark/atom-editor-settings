@@ -29,29 +29,31 @@
   'ctrl-shift left': 'window:focus-pane-on-left'
   'ctrl-shift up': 'window:focus-pane-above'
   'ctrl-shift down': 'window:focus-pane-below'
-  'ctrl-c f':'fuzzy-finder:toggle-file-finder'
+  'ctrl-c f': 'fuzzy-finder:toggle-file-finder'
   # 'ctrl-x alt-b': 'sync-settings:backup'
   # 'ctrl-x alt-r': 'sync-settings:restore'
-  'ctrl-x b':'fuzzy-finder:toggle-buffer-finder'
+  'ctrl-x b': 'fuzzy-finder:toggle-buffer-finder'
+  'ctrl-x g': 'git-control:toggle'
   'ctrl-x 0': 'pane:close'
   'ctrl-x 2': 'pane:split-down'
   'ctrl-x 3': 'pane:split-right'
+  'ctrl-x ctrl-g': 'project-find:show'
   'ctrl-x shift-t': 'pane:reopen-closed-item'
-
-  'ctrl-x ctrl-g': 'git-grep:grep'
-  'ctrl-shift-left': 'layout-manager:shrink-active-pane'
-  'ctrl-shift-right': 'layout-manager:enlarge-active-pane'
-  'alt-shift-right': 'layout-manager:move-pane-right'
-  'alt-shift-left': 'layout-manager:move-pane-left'
-  'alt-shift-up': 'layout-manager:move-pane-up'
-  'alt-shift-down': 'layout-manger:move-pane-down'
-  'ctrl-x g': 'atomatigit:show'
-
-
-'.autocomplete-plus input.hidden-input':
-  'enter': 'autocomplete-plus:confirm'
-
-'.platform-darwin, .platform-darwin .command-palette .editor':
   'alt-x': 'command-palette:toggle'
   'alt-.': 'symbols-view:go-to-declaration'
   'alt-,': 'symbols-view:return-from-declaration'
+
+
+  # Not sure if I like these keybindings, going to try them out
+  'alt-g ctrl-r': 'editor:checkout-head-revision'
+
+  # Can't seem to find the layout manager package anymore...
+  # 'ctrl-shift-left': 'layout-manager:shrink-active-pane'
+  # 'ctrl-shift-right': 'layout-manager:enlarge-active-pane'
+  # 'alt-shift-right': 'layout-manager:move-pane-right'
+  # 'alt-shift-left': 'layout-manager:move-pane-left'
+  # 'alt-shift-up': 'layout-manager:move-pane-up'
+  # 'alt-shift-down': 'layout-manger:move-pane-down'
+
+'.autocomplete-plus input.hidden-input':
+  'enter': 'autocomplete-plus:confirm'
