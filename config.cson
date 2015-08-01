@@ -11,10 +11,6 @@
       "nrepl"
       "language-jsx"
     ]
-    themes: [
-      "atom-dark-ui"
-      "seti-syntax"
-    ]
     audioBeep: false
   jshint:
     supportLintingJsx: true
@@ -43,3 +39,5 @@
   "linter-eslint": {}
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
+  "merge-conflicts":
+    gitPath: "/usr/local/bin/git"

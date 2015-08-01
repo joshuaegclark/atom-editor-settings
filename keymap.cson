@@ -22,6 +22,7 @@
 
 'atom-workspace, atom-text-editor':
   'ctrl-s': 'find-and-replace:show'
+  'ctrl-w': 'core:copy'
   'ctrl-y': 'core:paste'
   'ctrl-/': 'core:undo'
   'ctrl-x ctrl-s': 'core:save'
@@ -39,10 +40,10 @@
   'ctrl-x 3': 'pane:split-right'
   'ctrl-x ctrl-g': 'project-find:show'
   'ctrl-x shift-t': 'pane:reopen-closed-item'
+  'alt-w': 'core:cut'
   'alt-x': 'command-palette:toggle'
   'alt-.': 'symbols-view:go-to-declaration'
   'alt-,': 'symbols-view:return-from-declaration'
-
 
   # Not sure if I like these keybindings, going to try them out
   'alt-g ctrl-r': 'editor:checkout-head-revision'
