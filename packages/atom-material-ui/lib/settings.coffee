@@ -12,12 +12,6 @@ module.exports =
             type: 'string'
             default: 'Normal'
             enum: ['Small', 'Normal', 'Big']
-        themeSyle:
-            title: 'Theme style'
-            description: 'Select the theme style from Default, Darker and Lighter'
-            type: 'string'
-            default: 'Default'
-            enum: ['Darker', 'Default', 'Lighter']
         useRoboto:
             title: 'Use Roboto Mono font in text editors'
             type: 'boolean',
@@ -59,12 +53,17 @@ module.exports =
             enum: ['Small', 'Regular', 'Big', 'Huge']
         showTabIcons:
             title: 'Icons in tabs'
-            description: 'Shows the file-type icon for focused tabs. (Requires a package that enables file-type icons. i.e: file-icons, file-type-icons, seti-icons, etc…)'
-            type: 'boolean',
-            default: false
+            description: 'Shows the file-type icon for focused tabs.'
+            type: 'string'
+            default: 'Hide'
+            enum: ['Hide', 'Show on active tab', 'Show on all tabs']
         rippleAccentColor:
             title: 'Use accent color in tabs\' ripple effect'
             type: 'boolean',
+            default: false
+        useRobotoInUI:
+            title: 'Use Roboto font for UI'
+            type: 'boolean'
             default: false
 
     activate: (state) ->

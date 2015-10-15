@@ -33,6 +33,19 @@
                 &::before {
                     background: @color;
                 }
+                &.status-modified::before {
+                    background-color: @text-color-modified;
+                    color: darken(@text-color-modified, 60%);
+                }
+                &.status-added::before {
+                    background-color: @text-color-added;
+                }
+                &.status-renamed::before {
+                    background-color: @text-color-renamed;
+                }
+                &.status-remo::before {
+                    background-color: @text-color-removed;
+                }
             }
         }
     }
@@ -55,6 +68,9 @@
                 }
             }
         }
+        .package-readme a {
+            color: @color;
+        }
         .alert-info {
             color: lighten(@color, 20%);
         }
@@ -65,12 +81,12 @@
         }
         atom-text-editor[mini], atom-text-editor[mini]::shadow {
             .selection .region {
-                background-color: rgba(0,0,0,0.2) !important;
+                background-color: @syntax-selection-color;
             }
         }
         atom-text-editor[mini].is-focused, atom-text-editor[mini].is-focused::shadow {
             .selection .region {
-                background-color: rgba(0,0,0,0.5) !important;
+                background-color: @syntax-selection-color;
             }
         }
     }
@@ -87,7 +103,7 @@
             border-color: @color;
         }
         .selection .region {
-            background-color: rgba(0,0,0,0.2) !important;
+            background-color: @syntax-selection-color;
         }
     }
     atom-text-editor[mini].is-focused,
@@ -95,11 +111,11 @@
 
         &:before {
            background-color: @color;
-           width: 100%;
+           transform: scaleX(1);
         }
 
         .selection .region {
-            background-color: rgba(0,0,0,0.5) !important;
+            background-color: @syntax-selection-color;
         }
     }
     atom-panel.modal, .overlay {
@@ -140,9 +156,12 @@
             .highlight(@app-background-color);
         }
     }
+    .markdown-preview a {
+        color: @color;
+    }
     .light-accent(@color);
 }
-.light-accent(@accent) when (lightness(@accent) > 60%) {
+.light-accent(@accent) when (lightness(@accent) >= 60%) {
     .select-list ol.list-group, &.select-list ol.list-group {
         li {
             color: @text-color-subtle;

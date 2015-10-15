@@ -12,6 +12,10 @@
       "language-jsx"
     ]
     audioBeep: false
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
   jshint:
     supportLintingJsx: true
   "exception-reporting":
@@ -22,8 +26,8 @@
     userId: "f13df02236a0f1f8485bec3223975f32e2d2be2b"
   editor:
     invisibles: {}
-    fontSize: 15
-  react: {}
+  react:
+    enabledForAllJavascriptFiles: true
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
   autosave:
@@ -35,9 +39,27 @@
   "terminal-panel": {}
   "auto-update-packages": {}
   linter:
-    showErrorPanel: false
+    showErrorInline: false
   "linter-eslint": {}
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
   "merge-conflicts":
     gitPath: "/usr/local/bin/git"
+  "one-dark-ui":
+    layoutMode: "Compact"
+  "atom-material-ui":
+    depth: true
+    rippleAccentColor: true
+    tabSize: "Small"
+    showTabIcons: "Show on active tab"
+    compactTreeView: true
+    slimScrollbar: true
+    useRobotoInUI: true
+    useRoboto: true
+    panelContrast: true
+  "tree-view": {}
+  "atom-beautify":
+    _analyticsUserId: "fb225bd5-ece2-4cb3-87e6-daa860fd115b"
+".coffee.jsx.source":
+  editor:
+    autoIndentOnPaste: true

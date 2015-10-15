@@ -18,7 +18,7 @@
     padding: 0;
     overflow-x: auto;
     overflow-y: hidden;
-    .panel-background(@app-background-color);
+    background-color: @app-background-color;
 
     &::-webkit-scrollbar {
         display: none;
@@ -43,6 +43,7 @@
             text-align: right;
             line-height: @tab-height;
             color: @text-color;
+            cursor: pointer;
             -webkit-animation: zoomOut 250ms ease;
             -webkit-animation-fill-mode: forwards;
 
@@ -91,12 +92,12 @@
             display: none;
             position: absolute !important; // seti-icons overrides this property
             top: 50% !important; // Some file-type icons override this property.
-            left: 0;
+            left: 0 !important;
+            right: auto;
             bottom: auto;
-            transform: translateY(-50%) scale(0);
+            transform: translateY(-50%) scale(0) !important; // Some file-types override this
             transition: all 200ms;
             display: block;
-            color: @text-color !important;
             margin-right: 10px !important;
         }
         &::before {
@@ -127,6 +128,9 @@
         z-index: 1;
         opacity: 1;
 
+        .title::before {
+            transform: translateY(-50%) scale(1) !important; // Some file-types override this
+        }
         .close-icon {
             display: inline-block;
             line-height: @tab-height - 1px;
@@ -141,6 +145,9 @@
         &::after {
             left: 0;
             right: 0;
+        }
+        .title::before {
+            display: none;
         }
         .title::after {
             display: none;
@@ -199,6 +206,15 @@
             }
             .title {
                 -webkit-transition: none;
+
+                &::before {
+                    display: none !important;
+                }
+            }
+            &:hover {
+                .close-icon {
+                    display: inline-block;
+                }
             }
         }
     }
@@ -229,12 +245,28 @@
                 padding-left: 24px;
             }
             .title::before {
+                display: block !important;
                 width: auto;
                 height: auto;
                 transform: translateY(-50%) scale(1);
             }
         }
     }
+}
+.tab-icons-all {
+  .tab-bar {
+      .tab { // Specificity increase to prevent putting !important on transform
+          .title {
+              padding-left: 24px;
+          }
+          .title::before {
+              display: block !important;
+              width: auto;
+              height: auto;
+              transform: translateY(-50%) scale(1) !important;
+          }
+      }
+  }
 }
 .tab-size-small .tab-bar {
     .tab-size(32px);

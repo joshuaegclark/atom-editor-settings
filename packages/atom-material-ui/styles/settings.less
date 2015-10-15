@@ -54,6 +54,11 @@
             .highlight(@app-background-color);
         }
     }
+    .package-readme {
+        h1, h2, h3, h4, h5, h6 {
+            color: @text-color;
+        }
+    }
     .package-card, .package-detail .package-card {
         &:extend(.elevation-1);
         position: relative;
@@ -104,7 +109,7 @@
             position: absolute;
             bottom: 10px;
             left: 10px;
-            width: 280px;
+            width: 400px;
             height: 36px;
 
             .btn-toolbar {
@@ -255,6 +260,28 @@
 
             &::before {
                 margin-right: 2rem;
+            }
+        }
+    }
+    .error-message {
+        .close {
+            top: -11px;
+
+            &::before {
+                margin: 0 8px;
+            }
+        }
+    }
+}
+.no-animations {
+    .config-menu {
+        .nav > li {
+            & > a {
+                transition: none;
+            }
+            &.active::before {
+                -webkit-animation: ripplePaint 0ms;
+                -webkit-animation-fill-mode: forwards;
             }
         }
     }

@@ -13,7 +13,7 @@
                 height: @height;
             }
             span[class*="icon-"]::before {
-                margin-right: 1rem;
+                margin-right: 1.25rem;
             }
         }
     }
@@ -21,10 +21,10 @@
 
 .tree-view {
     font-size: @font-size;
-    .panel-background(@tree-view-background-color);
+    background-color: @tree-view-background-color;
 
     .selected::before {
-        .panel-background(@app-background-color);
+        background-color: rgba(0,0,0,0.025);
     }
     .tree-view-line-height(32px);
 }
@@ -48,6 +48,9 @@
             }
             & > span[class*="icon"]::before, & > .header.list-item span, & > .header.list-item::before {
                 color: rgba(255,255,255,0.9);
+            }
+            &.status-modified, &.status-modified > span[class*="icon"]::before, &.status-modified > .header.list-item span, &.status-modified > .header.list-item::before {
+                color: darken(@text-color-modified, 50%) !important;
             }
         }
     }
