@@ -1,25 +1,37 @@
 atom-config
 ===========
-### Installation
+## Installation
+
+* Clone & replace `.atom` directory:
 
 `cd && git clone https://github.com/joshuaegclark/atom-editor-settings .atom`
 
-You'll then need to update your packages as they are likely out of date in this repository.
-`cmd-,` will open settings, then go to the Updates section.
+* Install [package-sync](https://atom.io/packages/package-sync)
+  * `cmd-,` to bring up `Settings -> Install`
+  * Search for "package-sync" and install it
+  * `ctrl-x p` to sync packages
+    * Syncs your installed packages with the `packages.cson`
+
 
 ## What's Inside
-* Added keybindings to match emacs-style keybindings.
-  * See `keymap.cson` for complete list of bindings, but it is by no means complete, so feel free to submit a Pull Request to add more!
-* Packages
-  * Autocomplete Paths
-  * color-picker (`cmd-shift c`)
-  * linter & linter-eslint
-  * Seti UI & Syntax Themes
-  * Git Control
+### Keybindings
+
+stuff
+
+### Packages
+
+ Managed by [package-sync](https://atom.io/packages/package-sync)
+
+#### Adding New Packages
+
+* __Warning__: You need to sync with the existing packages list before installing a new package to add. Otherwise, you'll replace the existing package list with yours.
+* `Settings -> Install` - install the desired package
+* Add the package name to `packages.cson`
+* Sync packages `ctrl-x p`
+* Push your changes to `packages.cson`
 
 ## TODO
-* Additional/better Git tools
-  * Diffing, merge conflict resolution, etc
-* Figure out a better way of syncing Packages
-  * currently just committing the entire packages directory...prone to being out of date and bloats repo
-* Javascript REPL w/ Babel
+* Make package syncing smarter
+  * Make adding new packages easier
+  * Allow configuration of packages to __not__ sync
+    * Example: I want everything in `packages.cson` except _one_ of the packages. I also have some packages I want on my personal machine, but not committed back to the shared config. (Maybe I use Vim mode, but don't want to force it on everyone)
