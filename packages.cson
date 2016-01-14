@@ -1,0 +1,15 @@
+packages: [
+  "atom-material-syntax"
+  "atom-material-ui"
+  "atom-ternjs"
+  "autocomplete-paths"
+  "color-picker"
+  "linter"
+  "linter-clojure"
+  "linter-eslint"
+  "package-sync"
+  "Parinfer"
+  "react"
+  "seti-syntax"
+  "seti-ui"
+]

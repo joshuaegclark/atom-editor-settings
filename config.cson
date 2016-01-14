@@ -27,7 +27,6 @@
   "atom-ternjs":
     displayAboveSnippets: true
     documentation: false
-    guess: false
     lint: false
     sort: false
     urls: false

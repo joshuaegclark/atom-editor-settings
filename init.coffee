@@ -27,3 +27,11 @@ atom.commands.add 'atom-text-editor',
     for selection in editor.selections
       selection.joinLines()
       selection.autoIndentSelectedRows()
+  # 'user:create-package-manifest': (event) ->
+  #   packages = []
+  #   for p in atom.packages.getActivePackages()
+  #     debugger
+  #     # File.create(atom.configDirPath + 'packages.cson')
+  #     # if p.bundledPackage === false
+  #     # packages.push(p)
+  #     # write each package.name to file
