@@ -7,26 +7,11 @@
 # You can create a new keybinding in this file by typing "key" and then hitting
 # tab.
 #
-# Here's an example taken from Atom's built-in keymap:
-#
-# '.editor':
-#   'enter': 'editor:newline'
-#
-# '.workspace':
-#   'ctrl-shift-p': 'core:move-up'
-#   'ctrl-p': 'core:move-down'
-#
 # You can find more information about keymaps in these guides:
 # * https://atom.io/docs/latest/customizing-atom#customizing-key-bindings
 # * https://atom.io/docs/latest/advanced/keymaps
 
 'atom-workspace, atom-text-editor':
-  # 'ctrl-s': 'find-and-replace:show'
-  # 'ctrl-w': 'core:copy'
-  # 'ctrl-y': 'core:paste'
-  # 'ctrl-/': 'core:undo'
-  # 'alt-w': 'core:cut'
-  # 'ctrl-x ctrl-s': 'core:save'
   'shift right': 'window:focus-pane-on-right'
   'shift left': 'window:focus-pane-on-left'
   'shift up': 'window:focus-pane-above'
@@ -35,13 +20,10 @@
   'ctrl-x !': 'user:insert-rage'
   'ctrl-x _': 'user:insert-disapproval'
   'ctrl-x b': 'fuzzy-finder:toggle-buffer-finder' # cmd-b
-  # 'ctrl-x ctrl-b': 'fuzzy-finder:toggle-buffer-finder' # cmd-b
-  # 'ctrl-x j': 'editor:join-lines'
   'ctrl-x j': 'user:join-lines' # auto indents after joining
   'ctrl-x 0': 'pane:close'
   'ctrl-x 2': 'pane:split-down'
   'ctrl-x 3': 'pane:split-right'
-  # 'ctrl-x ctrl-g': 'project-find:show'
   'ctrl-x p': 'package-sync:sync'
   'ctrl-alt-x p': 'package-sync:create-package-list'
   'ctrl-alt-x shift-p': 'package-sync:open-package-list'
@@ -50,24 +32,6 @@
   'ctrl-alt-f': 'editor:move-to-end-of-word'
   'ctrl-alt-k': 'editor:delete-to-end-of-word'
   'ctrl-x alt-+': 'find-and-replace:select-all' # ctrl-cmd-g
-  # 'alt-=': 'editor:select-to-end-of-word'
-  # 'alt-+': 'find-and-replace:select-next'
-  # 'alt-_': 'find-and-replace:select-previous'
   'alt-x': 'command-palette:toggle'
   'alt-.': 'symbols-view:go-to-declaration'
   'alt-,': 'symbols-view:return-from-declaration'
-
-
-  # Not sure if I like these keybindings, going to try them out
-  # 'alt-g ctrl-r': 'editor:checkout-head-revision'
-
-  # Can't seem to find the layout manager package anymore...
-  # 'ctrl-shift-left': 'layout-manager:shrink-active-pane'
-  # 'ctrl-shift-right': 'layout-manager:enlarge-active-pane'
-  # 'alt-shift-right': 'layout-manager:move-pane-right'
-  # 'alt-shift-left': 'layout-manager:move-pane-left'
-  # 'alt-shift-up': 'layout-manager:move-pane-up'
-  # 'alt-shift-down': 'layout-manger:move-pane-down'
-#
-# '.autocomplete-plus input.hidden-input':
-#   'enter': 'autocomplete-plus:confirm'
