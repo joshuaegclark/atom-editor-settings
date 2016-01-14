@@ -37,3 +37,13 @@ atom-text-editor::shadow {
     padding-left: 4px !important;
   }
 }
+
+.indent-guide-improved {
+  background-color: fadeout(gray, 70%);
+  &.indent-guide-stack {
+    background-color: fadeout(cyan, 80%);
+    &.indent-guide-active {
+      background-color: fadeout(yellow, 70%);
+    }
+  }
+}

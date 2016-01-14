@@ -1,5 +1,46 @@
 "*":
+  "atom-beautify":
+    _analyticsUserId: "fb225bd5-ece2-4cb3-87e6-daa860fd115b"
+  "atom-material-ui":
+    compactTreeView: true
+    depth: true
+    fonts:
+      useRobotoInUI: true
+    panelContrast: true
+    panels:
+      depth: true
+      panelContrast: true
+    rippleAccentColor: true
+    showTabIcons: "Show on active tab"
+    slimScrollbar: true
+    tabSize: "Small"
+    tabs:
+      rippleAccentColor: true
+      showTabIcons: "Show on active tab"
+      tabSize: "Small"
+    treeView:
+      compactTreeView: true
+    ui:
+      slimScrollbar: true
+    useRoboto: true
+    useRobotoInUI: true
+  "atom-ternjs":
+    displayAboveSnippets: true
+    documentation: false
+    guess: false
+    lint: false
+    sort: false
+    urls: false
+    useSnippets: true
+    useSnippetsAndFunction: true
+  "autocomplete-plus":
+    autoActivationDelay: 200
+    confirmCompletion: "tab and enter"
+    includeCompletionsFromAllBuffers: true
+  autosave:
+    enabled: true
   core:
+    audioBeep: false
     disabledPackages: [
       "firepad"
       "jshint"
@@ -8,58 +49,29 @@
       "git-grep"
       "git-log"
       "git-plus"
-      "nrepl"
-      "language-jsx"
+      "Parinfer"
+      "autocomplete-paths"
+      "react"
     ]
-    audioBeep: false
     themes: [
       "atom-material-ui"
       "atom-material-syntax"
     ]
-  jshint:
-    supportLintingJsx: true
-  "exception-reporting":
-    userId: "eee8e486-0362-b5da-5e8b-925fe95bd14a"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "f13df02236a0f1f8485bec3223975f32e2d2be2b"
   editor:
     invisibles: {}
-  react:
-    enabledForAllJavascriptFiles: true
-  whitespace:
-    ignoreWhitespaceOnCurrentLine: false
-  autosave:
-    enabled: true
-  "autocomplete-plus":
-    confirmCompletion: "tab and enter"
-    includeCompletionsFromAllBuffers: true
-  "terminal-status": {}
-  "terminal-panel": {}
-  "auto-update-packages": {}
-  linter:
-    showErrorInline: false
-  "linter-eslint": {}
+  "exception-reporting":
+    userId: "eee8e486-0362-b5da-5e8b-925fe95bd14a"
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
-  "merge-conflicts":
-    gitPath: "/usr/local/bin/git"
-  "one-dark-ui":
-    layoutMode: "Compact"
-  "atom-material-ui":
-    depth: true
-    rippleAccentColor: true
-    tabSize: "Small"
-    showTabIcons: "Show on active tab"
-    compactTreeView: true
-    slimScrollbar: true
-    useRobotoInUI: true
-    useRoboto: true
-    panelContrast: true
-  "tree-view": {}
-  "atom-beautify":
-    _analyticsUserId: "fb225bd5-ece2-4cb3-87e6-daa860fd115b"
+  linter:
+    showErrorInline: false
+  "linter-clojure":
+    javaExecutablePath: "/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin/java"
+  "linter-eslint": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
 ".coffee.jsx.source":
   editor:
     autoIndentOnPaste: true

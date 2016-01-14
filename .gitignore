@@ -35,3 +35,6 @@ storage
 # these existed on my Ubuntu vm
 .node-gyp
 nohup.out
+
+packages
+blob-store

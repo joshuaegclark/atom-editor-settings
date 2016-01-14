@@ -12,3 +12,18 @@
 #   editor = editorView.getEditor()
 #   if path.extname(editor.getPath()) is '.md'
 #     editor.setSoftWrapped(true)
+
+
+atom.commands.add 'atom-text-editor',
+  'user:insert-rage': (event) ->
+    editor = @getModel()
+    editor.insertText('(ノಠ益ಠ)ノ彡 ┻━┻')
+  'user:insert-disapproval': (event) ->
+    editor = @getModel()
+    editor.insertText('ಠ_ಠ')
+  'user:join-lines': (event) ->
+    editor = @getModel()
+    # debugger
+    for selection in editor.selections
+      selection.joinLines()
+      selection.autoIndentSelectedRows()
