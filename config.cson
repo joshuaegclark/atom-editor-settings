@@ -48,9 +48,6 @@
       "git-grep"
       "git-log"
       "git-plus"
-      "Parinfer"
-      "autocomplete-paths"
-      "react"
       "vim-mode"
     ]
     themes: [
@@ -68,6 +65,8 @@
   "linter-clojure":
     javaExecutablePath: "/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin/java"
   "linter-eslint": {}
+  "package-sync":
+    forceOverwrite: true
   welcome:
     showOnStartup: false
   whitespace:
