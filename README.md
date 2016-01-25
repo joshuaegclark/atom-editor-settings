@@ -19,12 +19,16 @@ atom-config
 stuff
 
 ### Packages
+__Note__: Really need to find a better solution for syncing packages, but this one works fairly well.
 
  Managed by [package-sync](https://atom.io/packages/package-sync)
 
 #### Adding New Packages
 
 * __Warning__: You need to sync with the existing packages list before installing a new package to add. Otherwise, you'll replace the existing package list with yours.
+
+At worst, packages.cson becomes a reference for which packages to install.
+
 * `Settings -> Install` - install the desired package
 * Add the package name to `packages.cson`
 * Sync packages `ctrl-x p`

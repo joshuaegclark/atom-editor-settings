@@ -51,6 +51,7 @@
       "Parinfer"
       "autocomplete-paths"
       "react"
+      "vim-mode"
     ]
     themes: [
       "atom-material-ui"

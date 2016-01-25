@@ -8,8 +8,8 @@ packages: [
   "linter-clojure"
   "linter-eslint"
   "package-sync"
-  "Parinfer"
   "react"
   "seti-syntax"
   "seti-ui"
+  "vim-mode"
 ]

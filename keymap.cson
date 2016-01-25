@@ -11,6 +11,12 @@
 # * https://atom.io/docs/latest/customizing-atom#customizing-key-bindings
 # * https://atom.io/docs/latest/advanced/keymaps
 
+'.platform-darwin':
+  'cmd-ctrl-v': 'user:toggle-vim-mode'
+
+'atom-text-editor.vim-mode:not(.normal-mode)':
+  'j j': 'vim-mode:activate-normal-mode'
+
 'atom-workspace, atom-text-editor':
   'shift right': 'window:focus-pane-on-right'
   'shift left': 'window:focus-pane-on-left'
