@@ -50,16 +50,20 @@
       "git-plus"
       "vim-mode"
     ]
+    openEmptyEditorOnStart: false
     themes: [
       "atom-material-ui"
       "atom-material-syntax"
     ]
   editor:
+    backUpBeforeSaving: true
     invisibles: {}
+    showIndentGuide: true
   "exception-reporting":
     userId: "eee8e486-0362-b5da-5e8b-925fe95bd14a"
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
+  "language-babel": {}
   linter:
     showErrorInline: false
   "linter-clojure":

@@ -9,7 +9,6 @@ packages: [
   "linter-clojure"
   "linter-eslint"
   "package-sync"
-  "seti-syntax"
-  "seti-ui"
+  "todo-show"
   "vim-mode"
 ]
