@@ -26,7 +26,7 @@
   'ctrl-x !': 'user:insert-rage'
   'ctrl-x _': 'user:insert-disapproval'
   'ctrl-x b': 'fuzzy-finder:toggle-buffer-finder' # cmd-b
-  'ctrl-x j': 'user:join-lines' # auto indents after joining
+  'cmd-j': 'user:join-lines' # auto indents after joining
   'ctrl-x 0': 'pane:close'
   'ctrl-x 2': 'pane:split-down'
   'ctrl-x 3': 'pane:split-right'

@@ -39,6 +39,7 @@ At worst, packages.cson becomes a reference for which packages to install.
   * Make adding new packages easier
   * Allow configuration of packages to __not__ sync
     * Example: I want everything in `packages.cson` except _one_ of the packages. I also have some packages I want on my personal machine, but not committed back to the shared config. (Maybe I use Vim mode, but don't want to force it on everyone)
+*
 * Fix my lint errors!
   * Atom's delimiters matching often end up with having some code like:
 

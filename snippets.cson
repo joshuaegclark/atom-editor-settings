@@ -1,19 +1,99 @@
-# Your snippets
-#
-# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
-# expand the prefix into a larger code block with templated values.
-#
-# You can create a new snippet in this file by typing "snip" and then hitting
-# tab.
-#
-# An example CoffeeScript snippet to expand log to console.log:
-#
-'.source.coffee':
-  'Console log':
-    'prefix': 'log'
-    'body': 'console.log $1'
 
 '.source.js':
- 'Console log':
-  'prefix': 'log'
-  'body': 'console.log(${1:this})'
+  'Churro: FormattedMessage':
+    prefix: 'formatMsg'
+    body: 'formatMessageAsString({ messageKey: \'${1}\' })'
+  'Immutable: get':
+    prefix: 'get'
+    body: '${1}.get(\'${2}\');'
+  'Immutable: getIn':
+    prefix: 'getIn'
+    body: '${1}.getIn([\'${2}\', \'${3}\']);'
+  'Console log':
+    prefix: 'log'
+    body: 'console.log(${1:this})'
+   'Describe block':
+     prefix: 'des'
+     body: """
+       describe('${1:description}', () => {
+       \t$2
+       });$3
+     """
+   'It block':
+     prefix: 'it'
+     body: """
+       it('${1:description}', () => {
+       \t$2
+       });$3
+     """
+   'It Async block':
+     prefix: 'pit'
+     body: """
+       pit('${1:description}', async () => {
+       \t$3
+       \t
+       });$4
+     """
+   'After-Each block':
+     prefix: 'aft'
+     body: """
+       afterEach(() => {
+       \t$1
+       });#2
+     """
+   'Before-Each block':
+     prefix: 'bef'
+     body: """
+       beforeEach(() => {
+       \t$1
+       });$2
+     """
+   'Expect not to be defined':
+     prefix: 'notd'
+     body:   'expect($1).not.toBeDefined();$2'
+   'Expect not to be falsy':
+     prefix: 'notf'
+     body:   'expect(${1:target}).not.toBeFalsy();$2'
+   'Expect not to be null':
+     prefix: 'notn'
+     body:   'expect(${1:target}).not.toBeNull();$2'
+   'Expect not to be truthy':
+     prefix: 'nott'
+     body:   'expect(${1:target}).not.toBeTruthy();$2'
+   'Expect not to contain':
+     prefix: 'notc'
+     body:   'expect(${1:target}).not.toContain(${2:value});$3'
+
+   'Expect to be defined':
+     prefix: 'ed'
+     body: 'expect($1).toBeDefined();$2'
+   'Expect to be falsy':
+     prefix: 'ef'
+     body:   'expect(${1:target}).toBeFalsy();$2'
+   'Expect to be null':
+     prefix: 'en'
+     body:   'expect(${1:target}).toBeNull();$2'
+   'Expect to be truthy':
+     prefix: 'et'
+     body:   'expect(${1:target}).toBeTruthy();$2'
+   'Expect to contain':
+     prefix: 'ec'
+     body:   'expect(${1:target}).toContain(${2:value});$3'
+   'Expect to equal':
+     prefix: 'ee'
+     body:   'expect(${1:target}).toEqual(${2:value});$3'
+   'Expect to match':
+     prefix: 'em'
+     body:   'expect(${1:target}).toMatch(${2:pattern});$3'
+   'Expect to have been called':
+     prefix: 'ebc'
+     body:   'expect(${1:target}).toHaveBeenCalled();$2'
+   'Expect to have been called with':
+     prefix: 'ebcw'
+     body:   'expect(${1:target}).toHaveBeenCalledWith("${2:value}");$3'
+   'Expect to throw error':
+     prefix: 'ete'
+     body:   'expect(${1:target}).toThrowError("${2:error}");$3'
+   'Expect':
+     prefix: 'ex'
+     body: 'expect($1)$2;$3'
