@@ -3,6 +3,7 @@
     "atom-material-syntax",
     "atom-material-ui",
     "atom-ternjs",
+    "autocomplete-modules",
     "autocomplete-paths",
     "color-picker",
     "file-icons",
@@ -11,8 +12,8 @@
     "linter",
     "linter-clojure",
     "linter-eslint",
+    "linter-flow-plus",
     "package-foreman",
-    "package-sync",
     "pigments",
     "todo-show",
     "vim-mode"
