@@ -2,33 +2,35 @@
   "atom-beautify":
     _analyticsUserId: "fb225bd5-ece2-4cb3-87e6-daa860fd115b"
   "atom-material-ui":
-    compactTreeView: true
+    colors:
+      abaseColor:
+        red: 138
+        green: 44
+        blue: 42
+        alpha: 1
+      accentColor:
+        red: 27
+        green: 175
+        blue: 178
+        alpha: 1
+      genAccent: true
+      predefinedColor: "Red"
     depth: true
-    fonts:
-      useRobotoInUI: true
+    fonts: {}
     panelContrast: true
-    panels:
-      depth: true
-      panelContrast: true
-    rippleAccentColor: true
-    showTabIcons: "Show on active tab"
-    slimScrollbar: true
-    tabSize: "Small"
     tabs:
-      rippleAccentColor: true
-      showTabIcons: "Show on active tab"
-      tabSize: "Small"
+      compactTabs: true
     treeView:
-      compactTreeView: true
+      compactList: true
     ui:
-      slimScrollbar: true
-    useRoboto: true
-    useRobotoInUI: true
+      panelContrast: true
+      panelShadows: true
   "atom-ternjs":
+    caseInsensitive: false
     displayAboveSnippets: true
     documentation: false
+    guess: false
     lint: false
-    sort: false
     urls: false
     useSnippets: true
     useSnippetsAndFunction: true
@@ -49,6 +51,7 @@
       "git-log"
       "git-plus"
       "vim-mode"
+      "atom-import-sort"
     ]
     openEmptyEditorOnStart: false
     themes: [
@@ -63,7 +66,8 @@
     userId: "eee8e486-0362-b5da-5e8b-925fe95bd14a"
   "file-watcher":
     promptWhenFileHasChangedOnDisk: false
-  "language-babel": {}
+  "language-babel":
+    autoIndentJSX: true
   linter:
     showErrorInline: false
   "linter-clojure":
